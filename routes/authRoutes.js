@@ -4,7 +4,7 @@ const router = express.Router();
 AuthController = require('../controllers/authController');
 const {authenticateInApi, checkIfAdmin} = require('../middlewares/authentication.js');
 
-//GEY requests
+//GET requests
 router.get('/register', AuthController.agentReg);
 router.get('/login', AuthController.agentLogin);
 router.get('/logout', AuthController.logout);
